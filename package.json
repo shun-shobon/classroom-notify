@@ -5,5 +5,15 @@
   "author": "shun-shobon <shun.shobon@gmail.com> (https://github.com/shun-shobon)",
   "license": "MIT",
   "private": true,
-  "workspaces": ["front"]
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn workspaces run lint-staged"
+    }
+  },
+  "workspaces": [
+    "front"
+  ],
+  "devDependencies": {
+    "husky": "^4.2.5"
+  }
 }
