@@ -1,0 +1,8 @@
+{
+  "name": "classroom-notify",
+  "description": "授業・課題について通知します。",
+  "version": "0.1.0",
+  "author": "shun-shobon <shun.shobon@gmail.com> (https://github.com/shun-shobon)",
+  "license": "MIT",
+  "private": true
+}
