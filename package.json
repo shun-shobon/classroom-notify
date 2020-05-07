@@ -4,5 +4,6 @@
   "version": "0.1.0",
   "author": "shun-shobon <shun.shobon@gmail.com> (https://github.com/shun-shobon)",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "workspaces": ["front"]
 }
