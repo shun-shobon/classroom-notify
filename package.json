@@ -12,13 +12,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn workspaces run lint-staged"
+      "pre-commit": "yarn workspaces run lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "workspaces": [
     "front"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "husky": "^4.2.5"
   }
 }
