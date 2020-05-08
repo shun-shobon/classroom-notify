@@ -4,5 +4,24 @@
   "version": "0.1.0",
   "author": "shun-shobon <shun.shobon@gmail.com> (https://github.com/shun-shobon)",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "test": "yarn workspaces run test",
+    "lint": "yarn workspaces run lint",
+    "lint:fix": "yarn workspaces run lint:fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn workspaces run lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "workspaces": [
+    "front"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.5"
+  }
 }
